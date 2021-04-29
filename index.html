@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./scripts/script.js" type="module" defer></script>
+    <script src="./scripts/script2.js" type="module" defer></script>
+    
+</head>
+<body>
+    <nav>
+ 
+        <button class="tab_button" value="0">employee diplay</button>
+        <button class="tab_button add_employee_btn" value="1">add employee</button>
+
+
+    </nav>
+    <div class="tab_container">
+    <table id="table">
+        <thead>
+            <tr>
+               <th>image</th>    
+               <th>emai id</th> 
+               <th>name</th> 
+            
+            </tr>
+        </thead>
+
+        <tbody id="tbody">
+            
+        </tbody>
+
+    </table>
+    </div>
+
+    <div class="tab_container">
+        
+    <form id="employee_form" action="https://reqres.in/api/users"   method="POST" >
+        <div>
+        <h4>First name </h4>
+        <input name="first_name" placeholder="first name" type="text" >
+       
+        <h4>Last name </h4>
+        <input name="last_name" placeholder="last name" type="text" required>
+
+            <h4>Email </h4>
+                <input name="email" type="email" placeholder="email" required >
+                <h4>Image </h4>
+                    <input name="image" type="file" placeholder="image"><br>
+                    <img id="upload_img" src="#" alt="image" ><br>
+
+       
+        <input id="submit_button" type="submit" value="submit"> 
+        <input id="reset_btn" type="reset" value="reset">
+        </div>
+
+    </form>
+</div>
+    
+
+</body>
+</html>
